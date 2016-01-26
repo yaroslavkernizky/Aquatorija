@@ -29,6 +29,7 @@ body {
     bottom: 2%;
     display: none;
     z-index: 999;
+    opacity:0.7;
 }
 
 input::-webkit-search-cancel-button, button:focus {
@@ -185,7 +186,7 @@ p {
 }
 
     #nav ul .first_li {
-        padding: 0 20px 0 31px;
+        padding: 30px 20px 0 31px;
     }
 
     #nav ul > li {
@@ -432,14 +433,6 @@ footer:after {
         z-index: 999;
     }
 
-        .center_block button:hover {
-            -moz-transform: scale(0.95);
-            -ms-transform: scale(0.95);
-            -o-transform: scale(0.95);
-            -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-        }
-
         .center_block button:active {
             -moz-transform: scale(1.05);
             -ms-transform: scale(1.05);
@@ -569,30 +562,40 @@ footer ul li {
         list-style: none;
         padding: 10px;
         margin: 0;
+
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        width: 200px;
-        background-color: #eee;
+        width: 100%;
+        background-color: rgba(238, 238, 238, 0.80);
         height: 100%;
         top: 0;
-        right: -200px;
+        right: -100%;
+
         -moz-transition: right .2s;
         -o-transition: right .2s;
         -webkit-transition: right .2s;
         transition: right .2s;
-        z-index: 2;
+        z-index: 9991;
+
         -webkit-transform: translateZ(0);
         -moz-transform: translateZ(0);
         -ms-transform: translateZ(0);
         -o-transform: translateZ(0);
         transform: translateZ(0);
+
         -webkit-backface-visibility: hidden;
         -moz-backface-visibility: hidden;
         backface-visibility: hidden;
     }
+    #nav{
+       
+    }
 
         #nav ul li {
+            float:none;
+            clear:both;
+            display: block;
             line-height: 3;
         }
 
@@ -689,13 +692,14 @@ footer ul li {
         padding: 5px;
         position: fixed;
         top: 5px;
+        left: 5px;
         right: 5px;
         cursor: pointer;
         -moz-transition: right .23s;
         -o-transition: right .23s;
         -webkit-transition: right .23s;
         transition: right .23s;
-        z-index: 3;
+        z-index: 9992;
         width: 25px;
         -webkit-transform: translateZ(0);
         -moz-transform: translateZ(0);
