@@ -55,11 +55,6 @@ ul, ol, ul li, ol li {
     -webkit-padding-start: 0;
 }
 
-ul, ol {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-}
-
 h1 {
     font-family: OpenSansBold;
     font-size: 23px;
@@ -287,7 +282,7 @@ aside h2 {
     position: relative;
     background: rgba(0,0,0,0) url(../img/bg2.png) 100% 100%;
     background-size: 100% 100%;
-    padding: 0 0 10% 0;
+    padding: 0 0 4% 0;
 }
 
 .bgfooter_front {
